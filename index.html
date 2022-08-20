@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Responsive Registration Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+     }
+
+     .container {
+      background-image: url(images/bg-intro-desktop.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: hsl(0, 100%, 74%);
+      height: 100vh;
+      width: 100%;
+     }
+
+     .flex {
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 100px;
+     }
+
+     .first-section{
+      flex: 50%;
+      color: #fff;
+      padding: 0 40px;
+     }
+
+     h1 {
+      font-size: 50px;
+      line-height: 50px;
+      font-weight: 700;
+      margin-bottom: 30px;
+     }
+
+     .p-sec1 {
+      font-size: 16px;
+      line-height: 23px;
+     }
+
+     .second-section{
+      flex: 50%;
+      padding: 0 20px;
+     }
+
+     .head-container {
+      display: block;
+      background-color: hsl(248, 32%, 49%);
+      width: 550px;
+      height: 50px;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 6px 2px;
+      margin-bottom: 20px;
+      padding-top: 15px;
+     }
+
+     .p-sec2 {
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      line-height: 20px;
+     }
+
+     .registration-container {
+      display: block;
+      background-color: #fff;
+      width: 550px;
+      height: 410px;
+      padding: 30px 30px;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 6px 2px;
+     }
+
+     input {
+      display: block;
+      width: 490px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid hsl(246, 25%, 77%);
+      padding: 10px 30px;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      outline: none;
+    }
+  
+    .input:focus {
+      border: 1px solid hsl(249, 10%, 26%);
+      color: hsl(249, 10%, 26%);
+    }
+
+    .submit {
+      border: none;
+      background-color: hsl(154, 59%, 51%);
+      color: #fff;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 2px;
+    }
+
+    .submit:active {
+      background-color: #77e2b4;
+    }
+
+    .p-sec2b {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media screen and  (min-width: 1440px) {
+      .flex {
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+      }
+     }
+
+     
+    @media screen and (max-width: 910px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 70px 20px;
+    }
+
+    .container {
+      background-image: url(images/bg-intro-mobile.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: hsl(0, 100%, 74%);
+      width: 100%;
+      height: 1000px;
+      padding-top: 100px;
+    }
+
+    .first-section {
+      padding: 0px;
+      flex: 40%;
+      width: 335px;
+    }
+
+    .second-section{
+      flex: 60%;
+      margin-bottom: 20px;
+     }
+
+    .head-container {
+      width: 335px;
+      height: 80px;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 6px 2px;
+      margin-bottom: 25px;
+      padding: 20px 50px;
+     }
+
+    .registration-container {
+    width: 335px;
+    height: 410px;
+    padding: 20px 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 6px 2px;
+    }
+
+    input {
+      display: block;
+      width: 295px;
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid hsl(246, 25%, 77%);
+      padding: 10px 30px;
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 15px;
+      outline: none;
+    }
+
+    .input {
+      font-weight: 700;
+    }
+
+    .submit {
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      padding-left: 40px;
+     }
+
+     .p-sec1 {
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      padding: 0 10px;
+     }
+
+    .p-sec2 {
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    .p-sec2b {
+      padding: 0 20px;
+    }
+
+    } 
+
+    </style>
+  </head>
+  <body>
+    <main class="flex container">
+      <section class="first-section">
+        <h1>Learn to code by watching others</h1>
+        <p class="p-sec1">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+      </section>
+      <section class="second-section">
+        <div class="head-container">
+          <p class="p-sec2"><span style="font-weight: 700;">Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <div>
+          <form action="" method="get" class="registration-container">
+            <input type="text" name="name" class="input" placeholder="First Name" maxlength="30" required>
+            <input type="text" name="name" class="input" placeholder="Last Name" maxlength="30" required>
+            <input id="email" type="email" name="email" class="input" placeholder="Email Address" maxlength="40" required>
+            <input id="password" type="password" name="password" class="input" placeholder="Password" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <input type="submit" name="submit" value="CLAIM YOUR FREE TRIAL" class="submit">
+            <p class="p-sec2b"><span style="color: hsl(246, 25%, 77%);">By clicking the button, you are agreeing to our </span><span style="color: hsl(0, 100%, 74%);">Terms and services</span></p>
+          </form> 
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
